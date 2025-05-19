@@ -8,30 +8,32 @@ This project demonstrates how to conduct **Market Basket Analysis** using Excel 
 
 ## 📅 Step 1: Counting Product Frequencies per Basket
 We begin by loading the dataset and counting how many products exist per invoice (basket).
-![market_basket_imagesimage6 png](https://github.com/user-attachments/assets/941ef137-b4ff-433d-9a76-58962e1505f3)
 
-![Step 1](![market_basket_imagesimage6 png](https://github.com/user-attachments/assets/941ef137-b4ff-433d-9a76-58962e1505f3))
+![Step 1](https://github.com/user-attachments/assets/941ef137-b4ff-433d-9a76-58962e1505f3))
 
 ---
 
 ## 📊 Step 2: Creating a Pivot Table
 Using a Pivot Table, we count how many invoices each product appears in. This helps us later calculate **support values**.
 
-![Step 2](market_basket_images/image10.png)
+![Step 2]![image10](https://github.com/user-attachments/assets/4f29ec4a-f642-4104-b600-87f7e176d4f5)
+
 
 ---
 
 ## 🔍 Step 3: Identifying Target Product (GREEN CUP)
 We filter the data to only include invoices containing the product **GREEN CUP**.
 
-![Step 3](market_basket_images/image12.png)
+![Step 3]![image12](https://github.com/user-attachments/assets/2211923a-9623-4ca4-a4e8-5c1c28d054ed)
+
 
 ---
 
 ## 📋 Step 4: Extract Target Baskets
 We define the invoices that include GREEN CUP as our **target baskets**.
 
-![Step 4](market_basket_images/image13.png)
+![Step 4]![image13](https://github.com/user-attachments/assets/4ed4376d-6810-471a-9143-ec5f587963d2)
+
 
 ---
 
@@ -42,7 +44,8 @@ Using the formula below, we tag rows as "TARGET BASKET" if their invoice number 
 =IFERROR(VLOOKUP(B6, $N$5:$O$1019, 2, FALSE), "Not this product")
 ```
 
-![Step 5](market_basket_images/image14.png)
+![Step 5]![image14](https://github.com/user-attachments/assets/0e6383b3-e9e2-4e6a-894f-5323263c5af2)
+
 
 ---
 
@@ -61,7 +64,8 @@ Example:
 Support = 1000 / 20000 = 0.05 (5%)
 ```
 
-![Step 6](market_basket_images/image20.png)
+![Step 6]![image20](https://github.com/user-attachments/assets/9c9f11d6-0181-4100-a427-48176a2b99e3)
+
 
 ---
 
@@ -73,28 +77,32 @@ Confidence(GREEN CUP → RED PLATE) = Baskets_with_both / Baskets_with_GREEN_CUP
 = 750 / 1000 = 0.75
 ```
 
-![Step 7](market_basket_images/image21.png)
+![Step 7]![image21](https://github.com/user-attachments/assets/d1d121ab-37db-4e63-bce3-bf8ed775afbf)
+
 
 ---
 
 ## 🔢 Step 8: Fetch Support Using INDEX-MATCH
 We use INDEX-MATCH to fetch support values of related products to compute metrics like Lift later.
 
-![Step 8](market_basket_images/image22.png)
+![Step 8]![image22](https://github.com/user-attachments/assets/5cc48ca4-f7eb-478d-abde-036530b72c6f)
+
 
 ---
 
 ## 🧹 Step 9: Match by Product Name
 We match related products by name (ex: GREEN CUP) to find their associated support and co-occurrence.
 
-![Step 9](market_basket_images/image23.png)
+![Step 9]![image23](https://github.com/user-attachments/assets/4e52b2b8-b55b-4db5-a8f3-be7a02c2b07f)
+
 
 ---
 
 ## 📊 Step 10: Final Confidence Table
 We construct a final table showing how confidence spikes from low-support items based on association.
 
-![Step 10](market_basket_images/image24.png)
+![Step 10]![image24](https://github.com/user-attachments/assets/80bbc16b-84ca-48ea-a015-fcbebb3c3169)
+
 
 ---
 
