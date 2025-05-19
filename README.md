@@ -8,8 +8,9 @@ This project demonstrates how to conduct **Market Basket Analysis** using Excel 
 
 ## 📅 Step 1: Counting Product Frequencies per Basket
 We begin by loading the dataset and counting how many products exist per invoice (basket).
+![market_basket_imagesimage6 png](https://github.com/user-attachments/assets/941ef137-b4ff-433d-9a76-58962e1505f3)
 
-![Step 1](image6.png)
+![Step 1](![market_basket_imagesimage6 png](https://github.com/user-attachments/assets/941ef137-b4ff-433d-9a76-58962e1505f3))
 
 ---
 
